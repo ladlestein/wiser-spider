@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: com.nowanswers:spider_2.10:0.1.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.nowanswers/spider_2.10/0.1.3/jars/spider_2.10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.nowanswers/spider_2.10/0.1.3/docs/spider_2.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.nowanswers/spider_2.10/0.1.3/srcs/spider_2.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

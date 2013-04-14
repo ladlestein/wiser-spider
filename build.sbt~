@@ -1,0 +1,17 @@
+name := "wiser-spider"
+
+version := "0.1.0"
+
+organization := "com.nowanswers"
+
+scalaVersion := "2.10.1"
+
+libraryDependencies ++= Seq(
+)
+
+resolvers ++= Seq(
+    "spray repo" at "http://repo.spray.io",
+    "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
+    "Scala-Tools Maven2 Snapshots Repository" at "https://oss.sonatype.org/content/groups/scala-tools",
+    "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+)

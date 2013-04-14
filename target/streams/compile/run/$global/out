@@ -1,0 +1,867 @@
+[0m[[0minfo[0m] [0mRunning com.nowanswers.wiserspider.WiserSpiderApp [0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.248] [main] [EventStream(akka://spider)] logger log1-Logging$DefaultLogger started[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.250] [main] [EventStream(akka://spider)] Default Loggers started[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.287] [spider-akka.actor.default-dispatcher-2] [akka://spider/user] now supervising Actor[akka://spider/user/io-bridge][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.287] [spider-akka.actor.default-dispatcher-2] [akka://spider/user] now supervising Actor[akka://spider/user/$a][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.287] [spider-akka.actor.default-dispatcher-2] [akka://spider/user] now supervising Actor[akka://spider/user/http-conduit][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.288] [spider-akka.actor.default-dispatcher-2] [akka://spider/user] now supervising Actor[akka://spider/user/Master][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.311] [spider-akka.actor.default-dispatcher-4] [akka://spider/user/Master/letterRouter/$a] started (com.nowanswers.wiserspider.WiserSpiderApp$PageVisitor@ef894ce)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.312] [spider-akka.actor.default-dispatcher-8] [akka://spider/user/Master/letterRouter/$c] started (com.nowanswers.wiserspider.WiserSpiderApp$PageVisitor@61f1680f)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.312] [spider-akka.actor.default-dispatcher-9] [akka://spider/user/Master/letterRouter/$a] now monitoring Actor[akka://spider/user/Master/letterRouter][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.312] [spider-akka.actor.default-dispatcher-4] [akka://spider/user/Master/letterRouter/$c] now monitoring Actor[akka://spider/user/Master/letterRouter][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.312] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/Master/letterRouter/$b] started (com.nowanswers.wiserspider.WiserSpiderApp$PageVisitor@802b249)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.312] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/Master/letterRouter/$b] now monitoring Actor[akka://spider/user/Master/letterRouter][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.316] [spider-akka.actor.default-dispatcher-8] [akka://spider/user/Master/letterRouter] started (akka.routing.RouterConfig$$anon$1@4743bf3d)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.316] [spider-akka.actor.default-dispatcher-8] [akka://spider/user/Master/letterRouter] now supervising Actor[akka://spider/user/Master/letterRouter/$a][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.316] [spider-akka.actor.default-dispatcher-8] [akka://spider/user/Master/letterRouter] now supervising Actor[akka://spider/user/Master/letterRouter/$b][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.316] [spider-akka.actor.default-dispatcher-8] [akka://spider/user/Master/letterRouter] now supervising Actor[akka://spider/user/Master/letterRouter/$c][0m
+[0m[[0minfo[0m] [0m[INFO] [04/14/2013 15:38:21.326] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] akka://spider/user/io-bridge started[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.327] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] started (spray.io.IOBridge@10987197)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.333] [spider-akka.actor.default-dispatcher-6] [akka://spider/user/http-conduit] started (spray.client.HttpConduit@42238016)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.349] [spider-akka.actor.default-dispatcher-7] [akka://spider/user/Master] started (com.nowanswers.wiserspider.WiserSpiderApp$Master@259a8416)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.350] [spider-akka.actor.default-dispatcher-7] [akka://spider/user/Master] now supervising Actor[akka://spider/user/Master/letterRouter][0m
+[0m[[0minfo[0m] [0m[INFO] [04/14/2013 15:38:21.350] [spider-akka.actor.default-dispatcher-7] [akka://spider/user/Master] fetching issue Agricultural Policy[0m
+[0m[[0minfo[0m] [0m[INFO] [04/14/2013 15:38:21.357] [spider-akka.actor.default-dispatcher-7] [akka://spider/user/Master] fetching issue Agricultural Water Conservation and Management[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.366] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/http-conduit] Opening connection 1 to www.wiser.org:80[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.402] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/http-conduit] Opening connection 2 to www.wiser.org:80[0m
+[0m[[0minfo[0m] [0m[INFO] [04/14/2013 15:38:21.513] [spider-akka.actor.default-dispatcher-3] [akka://spider/user/$a] Starting akka://spider/user/$a[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.514] [spider-akka.actor.default-dispatcher-3] [akka://spider/user/$a] started (spray.can.client.HttpClient@51af4309)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.514] [spider-akka.actor.default-dispatcher-3] [akka://spider/user/$a] now monitoring Actor[akka://spider/user/http-conduit][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.514] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Executing Connect(www.wiser.org/174.129.3.252:80,None,())[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.520] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Connection request registered[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.520] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Executing Connect(www.wiser.org/174.129.3.252:80,None,())[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.520] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Connection request registered[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.605] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Connection established to www.wiser.org/174.129.3.252:80[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.608] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Connection established to www.wiser.org/174.129.3.252:80[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.613] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Registering connection, enabling reads[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.614] [spider-akka.actor.default-dispatcher-6] [akka://spider/user/$a] now supervising Actor[akka://spider/user/$a/$a][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.614] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Registering connection, enabling reads[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.614] [spider-akka.actor.default-dispatcher-6] [akka://spider/user/$a] now supervising Actor[akka://spider/user/$a/$b][0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.615] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/http-conduit] Connected connection 2, dispatching 1 pending requests[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.616] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/http-conduit] Dispatching GET request to http://www.wiser.org:80/organizations/api_search?phrase=Agricultural+Water+Conservation+and+Management&sig=865fdad6d15b99474c084d15fd8c6858&key=5afb532c23893c3a932a38cce6d7b06f across connection 2[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.616] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/http-conduit] Connected connection 1, dispatching 1 pending requests[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.617] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/http-conduit] Dispatching GET request to http://www.wiser.org:80/organizations/api_search?phrase=Agricultural+Policy&sig=b86e81ad050d619c02c1a1465a06eb3a&key=5afb532c23893c3a932a38cce6d7b06f across connection 1[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.626] [spider-akka.actor.default-dispatcher-3] [akka://spider/user/$a/$a] started (spray.can.client.HttpClient$$anonfun$createConnectionActor$1$$anon$1@79ce00b4)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.627] [spider-akka.actor.default-dispatcher-4] [akka://spider/user/$a/$b] started (spray.can.client.HttpClient$$anonfun$createConnectionActor$1$$anon$1@439067e5)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.634] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Scheduling 194 bytes in 1 buffers for writing (ack: None)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.634] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Scheduling 221 bytes in 1 buffers for writing (ack: None)[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.634] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Writing to connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.636] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Wrote 221 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.637] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Writing to connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:21.637] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Wrote 194 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.073] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.074] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 3522 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.152] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.152] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 4096 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.152] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.152] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1774 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.153] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.153] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.154] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.154] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.155] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.155] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.155] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.156] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.156] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.156] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.156] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.157] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.232] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.232] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.233] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.233] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.234] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.234] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.235] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.235] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.236] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.236] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.236] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.237] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.240] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.240] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.241] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.241] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.241] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.241] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.242] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.242] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.242] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.242] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.315] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.315] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.315] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.315] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.318] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.318] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.318] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.318] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.320] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.320] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 2348 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.320] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.320] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.320] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.321] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.325] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.325] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.326] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.326] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.326] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.326] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.326] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.326] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.327] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.327] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.396] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.396] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.396] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.396] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.427] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.427] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.601] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.601] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.699] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.699] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1174 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.780] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.780] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 1454 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.789] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/http-conduit] Dispatching 200 response to GET request to http://www.wiser.org:80/organizations/api_search?phrase=Agricultural+Water+Conservation+and+Management&sig=865fdad6d15b99474c084d15fd8c6858&key=5afb532c23893c3a932a38cce6d7b06f[0m
+[0m[[0minfo[0m] [0m[INFO] [04/14/2013 15:38:23.798] [spider-akka.actor.default-dispatcher-8] [akka://spider/user/Master/letterRouter/$b] have body for /organizations/api_search?phrase=Agricultural+Water+Conservation+and+Management&sig=865fdad6d15b99474c084d15fd8c6858&key=5afb532c23893c3a932a38cce6d7b06f[0m
+[0m[[0minfo[0m] [0m[INFO] [04/14/2013 15:38:23.798] [spider-akka.actor.default-dispatcher-8] [akka://spider/user/Master/letterRouter/$b] <?xml version="1.0" encoding="UTF-8"?>[0m
+[0m[[0minfo[0m] [0m<rsp stat="ok" version="1.0">[0m
+[0m[[0minfo[0m] [0m  <results>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/665c87a9e215c0a83d394a8d47f5e7c2" id="665c87a9e215c0a83d394a8d47f5e7c2" Name="Nikimu water conservation project for food production during dry periods and adapt to climate change" Website="" City="Kampala" Province="East Africa" State="" Country="UG" Area="Aquaculture,Poverty Alleviation,Watershed Management,Rural Development,Sustainable Agriculture,Hunger and Food Security,Natural Resource Conservation,Agricultural Water Conservation and Management,Water and Sustainable Development" Updated="about 1 month ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[<p><strong>Nikimu[0m
+[0m[[0minfo[0m] [0mwater conservation project for food production during dry periods and adapt to[0m
+[0m[[0minfo[0m] [0mclimate change.</strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong> </strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong>INTRODUCTION </strong></p>[0m
+[0m[[0minfo[0m] [0m<p>Water is the vital resource to support all forms life on earth.[0m
+[0m[[0minfo[0m] [0mUnfortunately, it is not evenly distributed over the world by season or location.[0m
+[0m[[0minfo[0m] [0mSome parts of the world are prone to drought making water a scarce and precious[0m
+[0m[[0minfo[0m] [0mcommodity, while in other parts of the world it appears in raging torrents[0m
+[0m[[0minfo[0m] [0mcausing floods and loss of life and property. Throughout the history of the[0m
+[0m[[0minfo[0m] [0mworld, dams and reservoirs have been used successfully in collecting, storing[0m
+[0m[[0minfo[0m] [0mand managing water needed to sustain civilization. Even today, water remains[0m
+[0m[[0minfo[0m] [0messential for the survival of mankind and the future development of the world’s[0m
+[0m[[0minfo[0m] [0mcities, industries and agriculture. Storing water through reservoirs and[0m
+[0m[[0minfo[0m] [0mdams   is seen as another   way of adapting to climate change. The primary[0m
+[0m[[0minfo[0m] [0mbenefit of dams and water reservoirs in the world is water supply. Another key[0m
+[0m[[0minfo[0m] [0mpurpose and benefit include: Irrigation for agriculture (food supply).</p>[0m
+[0m[[0minfo[0m] [0m<p><strong><em>Meeting the agricultural demand for food supply;</em></strong></p>[0m
+[0m[[0minfo[0m] [0m<p>One[0m
+[0m[[0minfo[0m] [0mof the biggest uses of water on a worldwide scale is agricultural irrigation.[0m
+[0m[[0minfo[0m] [0mSince the early</p>[0m
+[0m[[0minfo[0m] [0m<p>1990s,[0m
+[0m[[0minfo[0m] [0mless than 1/5 of the land suitable for agriculture in the world has been[0m
+[0m[[0minfo[0m] [0mirrigated, and it has contributed about 1/3 of world food production. It is[0m
+[0m[[0minfo[0m] [0mestimated that 80% of additional food production by the year 2025 will come[0m
+[0m[[0minfo[0m] [0mfrom irrigated land. Most of the areas in need of irrigation are in arid zones,[0m
+[0m[[0minfo[0m] [0mwhich represent a major portion of the developing countries. However, with the[0m
+[0m[[0minfo[0m] [0meffects of climate change on agriculture, more widespread measures to conserve[0m
+[0m[[0minfo[0m] [0mwater by improvements in irrigation technology, construction of more reservoir[0m
+[0m[[0minfo[0m] [0mprojects will be required especially in developing countries like Uganda where[0m
+[0m[[0minfo[0m] [0magriculture counts for about 80% of the economy. </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p><strong>DESCRIPTION OF PURPOSE AND NEED</strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong> </strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong>A.[0m
+[0m[[0minfo[0m] [0mPurpose</strong></p>[0m
+[0m[[0minfo[0m] [0m<p>The[0m
+[0m[[0minfo[0m] [0mNikimu water conservation project and the District (Budaka) will be committed[0m
+[0m[[0minfo[0m] [0mto water conservation projects in order to adapt to climate change and increase[0m
+[0m[[0minfo[0m] [0mirrigation for food production in subsequent years following the establishment[0m
+[0m[[0minfo[0m] [0mof the first water conservation project (Nikimu Water Conservation Project). </p>[0m
+[0m[[0minfo[0m] [0m<p>The[0m
+[0m[[0minfo[0m] [0mrelief of Budaka District is generally low [0m
+[0m[[0minfo[0m] [0mand flat  characterized by shallow[0m
+[0m[[0minfo[0m] [0mseasonal wetlands, were by these waters can be collected and conserved for[0m
+[0m[[0minfo[0m] [0mincreased food production  and adaption[0m
+[0m[[0minfo[0m] [0mto climate change. Its altitude ranges from 900-1200m above sea level (average[0m
+[0m[[0minfo[0m] [0mof 1145m). The drainage system is dominated by rivers flowing from the Namatala[0m
+[0m[[0minfo[0m] [0mand lwere swamp complexes. Which have their watersheds mainly on the slopes of[0m
+[0m[[0minfo[0m] [0mMt Elgon. The water source to these wetlands is mainly surface flow in terms of[0m
+[0m[[0minfo[0m] [0mrivers, precipitation and ground water. There are great advantages associated with[0m
+[0m[[0minfo[0m] [0mthis project: the conservation of these water sheds will also influence micro[0m
+[0m[[0minfo[0m] [0mclimate; the environmental impact is low in area where the project is going to[0m
+[0m[[0minfo[0m] [0mbe located and  when these waters are[0m
+[0m[[0minfo[0m] [0mcollected and conserved for climate change adaption purpose, the water[0m
+[0m[[0minfo[0m] [0mconservation ponds can be used for fish farming; the project supports the[0m
+[0m[[0minfo[0m] [0meconomy of Uganda, whereby it is based on agriculture and the irrigation system[0m
+[0m[[0minfo[0m] [0mand the water conservation will support food production (organic farming)[0m
+[0m[[0minfo[0m] [0mthroughout the year.  </p>[0m
+[0m[[0minfo[0m] [0m<p><strong><em> </em></strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong><em>Youth,[0m
+[0m[[0minfo[0m] [0memployment and Sustainable agriculture </em></strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong><em> </em></strong></p>[0m
+[0m[[0minfo[0m] [0m<p>“In[0m
+[0m[[0minfo[0m] [0mAfrica, 200 million people are aged between 15 and 24 years, comprising more[0m
+[0m[[0minfo[0m] [0mthan 20% of population. Africa’s population is growing fast and is experiencing[0m
+[0m[[0minfo[0m] [0ma slow demographic transition, which will increase the pressure countries face[0m
+[0m[[0minfo[0m] [0mwith job creation.</p>[0m
+[0m[[0minfo[0m] [0m<p><strong>Note</strong></p>[0m
+[0m[[0minfo[0m] [0m<ul>[0m
+[0m[[0minfo[0m] [0m<li>Youth make up 37% percent of the[0m
+[0m[[0minfo[0m] [0mworking-age population in Africa, but 60%of the total unemployed.</li>[0m
+[0m[[0minfo[0m] [0m<li>Youth unemployment is much more[0m
+[0m[[0minfo[0m] [0mprevalent in urban areas</li>[0m
+[0m[[0minfo[0m] [0m</ul>[0m
+[0m[[0minfo[0m] [0m<p>Youth[0m
+[0m[[0minfo[0m] [0munemployment is leading various problems in Africa including rebellions like[0m
+[0m[[0minfo[0m] [0mthe ones Tunisia and Egypt and this likely to spread too many parts of the[0m
+[0m[[0minfo[0m] [0mworld if not solved  </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p>Lack[0m
+[0m[[0minfo[0m] [0mof opportunities in rural areas have encouraged the youth to migrate to urban[0m
+[0m[[0minfo[0m] [0mcenters. But, because most countries like Uganda have not yet initiated their[0m
+[0m[[0minfo[0m] [0mtransition to industrialization, urban centers cannot create a massive number[0m
+[0m[[0minfo[0m] [0mof jobs. Thus, in the short term, only rural activities like farming can[0m
+[0m[[0minfo[0m] [0meffectively create occupation for most new job seekers.</p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p>Modern[0m
+[0m[[0minfo[0m] [0magriculture has considerable potential for job and wealth creation and may[0m
+[0m[[0minfo[0m] [0mabsorb large numbers of would-be youth migrants or youths who currently crowd[0m
+[0m[[0minfo[0m] [0mthe cities with underemployment. Making well balanced choices for[0m
+[0m[[0minfo[0m] [0memployment-intensive investments in agriculture activities can create immediate[0m
+[0m[[0minfo[0m] [0mshort term employment opportunities which can be more easily tapped by young[0m
+[0m[[0minfo[0m] [0mpeople. Combined with appropriate local economic development strategies, it can[0m
+[0m[[0minfo[0m] [0mgenerate more and sustainable jobs. This requires strategies to make[0m
+[0m[[0minfo[0m] [0magriculture an attractive enough option for youth to engage in, including[0m
+[0m[[0minfo[0m] [0mmoving away from subsistence agriculture, and introducing commercialization and[0m
+[0m[[0minfo[0m] [0mproductivity improvements through technological changes and infrastructure support.[0m
+[0m[[0minfo[0m] [0mSupporting organic farming and fish farming( highly recommend to day) can[0m
+[0m[[0minfo[0m] [0mprovide away forward for the governments want to mitigate and prevent youth[0m
+[0m[[0minfo[0m] [0murban unemployment and underemployment to grow, and the well being in the[0m
+[0m[[0minfo[0m] [0malready congested African cities like Kampala in Uganda. Not only will[0m
+[0m[[0minfo[0m] [0msustainable agriculture resolve youth employment, but sustainable agriculture[0m
+[0m[[0minfo[0m] [0minvolving organic farming can solve most of current environmental problems.” </p>[0m
+[0m[[0minfo[0m] [0m<p><strong> </strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong>Organic farming in solving current[0m
+[0m[[0minfo[0m] [0menvironmental problems </strong></p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<ul>[0m
+[0m[[0minfo[0m] [0m<li><strong><em>Greenhouse gas emissions and[0m
+[0m[[0minfo[0m] [0mclimate change</em></strong></li>[0m
+[0m[[0minfo[0m] [0m</ul>[0m
+[0m[[0minfo[0m] [0m<p>Despite[0m
+[0m[[0minfo[0m] [0morganic farming’s low-energy methods, it is not in reducing demand for power[0m
+[0m[[0minfo[0m] [0mthat the techniques stand to make the biggest savings in greenhouse gas[0m
+[0m[[0minfo[0m] [0memissions. The production of ammonium nitrate fertilizer, which is[0m
+[0m[[0minfo[0m] [0mindispensable to conventional farming, produces vast quantities of nitrous[0m
+[0m[[0minfo[0m] [0moxide – a greenhouse gas with a global warming potential some 320 times greater[0m
+[0m[[0minfo[0m] [0mthan that of CO2. In fact, the production of one tonne of ammonium nitrate[0m
+[0m[[0minfo[0m] [0mcreates 6.7 tonnes of greenhouse gases (CO&amp;sup2;e).</p>[0m
+[0m[[0minfo[0m] [0m<ul>[0m
+[0m[[0minfo[0m] [0m<li><strong><em>Energy </em></strong></li>[0m
+[0m[[0minfo[0m] [0m</ul>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p>Far[0m
+[0m[[0minfo[0m] [0mfrom being simply ‘energy-lite’, however, organic farms have the potential to[0m
+[0m[[0minfo[0m] [0mbecome self-sufficient in energy – farms can [0m
+[0m[[0minfo[0m] [0mfeed manure and waste from livestock and crops into biodigesters, which[0m
+[0m[[0minfo[0m] [0mconvert it into a methane-rich gas to be used for creating heat and[0m
+[0m[[0minfo[0m] [0melectricity. The residue from these biodigesters is a crumbly, nutrient-rich fertilizer,[0m
+[0m[[0minfo[0m] [0mwhich can then be spread on soil to increase crop yields or <strong>further digested by algae and used as a[0m
+[0m[[0minfo[0m] [0mfish or animal feed.</strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong><em>Promote[0m
+[0m[[0minfo[0m] [0mBiodiversity</em></strong></p>[0m
+[0m[[0minfo[0m] [0m<p> Visit an organic farm and you’ll notice[0m
+[0m[[0minfo[0m] [0msomething: a buzz of animal, bird and insect activity. These organic oases are[0m
+[0m[[0minfo[0m] [0mthriving, diverse habitats. Beneficial insects allow for a greater balance, and[0m
+[0m[[0minfo[0m] [0mindigenous animals find these farms a safe haven. As best said by Aldo Leopold,[0m
+[0m[[0minfo[0m] [0m“A good farm must be one where the native flora and fauna have lost acreage[0m
+[0m[[0minfo[0m] [0mwithout losing their existence.” An organic farm is the equivalent of reforestation.[0m
+[0m[[0minfo[0m] [0mIndustrial farms are the equivalent of clear cutting of native habitat with a[0m
+[0m[[0minfo[0m] [0mfocus on high farm yields.</p>[0m
+[0m[[0minfo[0m] [0m<p><strong>Protect Future Generations</strong></p>[0m
+[0m[[0minfo[0m] [0m<p> Before a mother first nurses her newborn, the[0m
+[0m[[0minfo[0m] [0mtoxic risk from pesticides has already begun. Studies show that infants are[0m
+[0m[[0minfo[0m] [0mexposed to hundreds of harmful chemicals in uterus. In fact, our many nations are[0m
+[0m[[0minfo[0m] [0mnow reaping the results of exposure to agricultural and industrial chemicals,[0m
+[0m[[0minfo[0m] [0mwhose safety was deemed on adult tolerance levels, not on children’s. According[0m
+[0m[[0minfo[0m] [0mto the National Academy of Science, “neurologic and behavioral effects may[0m
+[0m[[0minfo[0m] [0mresult from low-level exposure to pesticides.” Numerous studies show that pesticides[0m
+[0m[[0minfo[0m] [0mcan adversely affect the nervous system, increase the risk of cancer, and[0m
+[0m[[0minfo[0m] [0mdecrease fertility. Promoting organic farming inclusive in this project can be the[0m
+[0m[[0minfo[0m] [0mway for sustainable and a health future for our children.” </p>[0m
+[0m[[0minfo[0m] [0m<p><strong><em>The[0m
+[0m[[0minfo[0m] [0mPond Fish Farming in water conservation ponds will contribute to Millennium[0m
+[0m[[0minfo[0m] [0mDevelopment Goals </em></strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong><em> </em></strong></p>[0m
+[0m[[0minfo[0m] [0m<table style="width:708px;" border="1" cellspacing="0" cellpadding="0">[0m
+[0m[[0minfo[0m] [0m<tbody>[0m
+[0m[[0minfo[0m] [0m<tr>[0m
+[0m[[0minfo[0m] [0m<td width="349" valign="top">[0m
+[0m[[0minfo[0m] [0m<p>Millennium development goal</p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m<td width="359" valign="top">[0m
+[0m[[0minfo[0m] [0m<p>How pond fish farming contribute to MDGs</p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m</tr>[0m
+[0m[[0minfo[0m] [0m<tr>[0m
+[0m[[0minfo[0m] [0m<td width="349" valign="top">[0m
+[0m[[0minfo[0m] [0m<p><em>Eradicate extreme poverty and hunger </em></p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m<td width="359" valign="top">[0m
+[0m[[0minfo[0m] [0m<p>Fish protein(proper nutrition) correlates with[0m
+[0m[[0minfo[0m] [0m  reduced health care, it is proved that a lot of money is spent on treating[0m
+[0m[[0minfo[0m] [0m  many nutritional diseases including protein deficiencies  in Uganda for example kwashiorkor ; project[0m
+[0m[[0minfo[0m] [0m  will improve food security by constant production and supply of fresh[0m
+[0m[[0minfo[0m] [0m  fish  in the District and the Surrounding[0m
+[0m[[0minfo[0m] [0m  communities.</p>[0m
+[0m[[0minfo[0m] [0m<p> Fish[0m
+[0m[[0minfo[0m] [0m  farming in potential sites will provide employment for at youth  in Kamonkoli and Budaka District as a whole,[0m
+[0m[[0minfo[0m] [0m  and income to farmers who will get involved in continued  farming during dry season, hence reducing[0m
+[0m[[0minfo[0m] [0m  poverty </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m</tr>[0m
+[0m[[0minfo[0m] [0m<tr>[0m
+[0m[[0minfo[0m] [0m<td width="349" valign="top">[0m
+[0m[[0minfo[0m] [0m<p><em>Achieve  Universal Primary Education </em></p>[0m
+[0m[[0minfo[0m] [0m<p>Target: Ensure that by 2015, children everywhere,[0m
+[0m[[0minfo[0m] [0m  boys and girls alike, will be able to complete a full course of Primary[0m
+[0m[[0minfo[0m] [0m  Schooling  millennium summit</p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m<td width="359" valign="top">[0m
+[0m[[0minfo[0m] [0m<p>Fish protein is very[0m
+[0m[[0minfo[0m] [0m  important in brain cells development and therefore the mental and brain[0m
+[0m[[0minfo[0m] [0m  capacity of children. The poor academic and creativity capacity of the people[0m
+[0m[[0minfo[0m] [0m  is closely associated with lack protein in children’s diet, egg protein will[0m
+[0m[[0minfo[0m] [0m  enable boys and girls alike, complete a full course of Primary without difficulties.[0m
+[0m[[0minfo[0m] [0m  There will also be continued farming, this will be able to provide food for[0m
+[0m[[0minfo[0m] [0m  students in school. </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m</tr>[0m
+[0m[[0minfo[0m] [0m<tr>[0m
+[0m[[0minfo[0m] [0m<td width="349" valign="top">[0m
+[0m[[0minfo[0m] [0m<p><em>Promote gender equality and empower[0m
+[0m[[0minfo[0m] [0m  women </em></p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m<td width="359" valign="top">[0m
+[0m[[0minfo[0m] [0m<p>Farming activities are executed both by men and[0m
+[0m[[0minfo[0m] [0m  women; hence water conservation will enable both women and men for continued[0m
+[0m[[0minfo[0m] [0m  farming. </p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m</tr>[0m
+[0m[[0minfo[0m] [0m<tr>[0m
+[0m[[0minfo[0m] [0m<td width="349" valign="top">[0m
+[0m[[0minfo[0m] [0m<p><em>Reduce child mortality </em></p>[0m
+[0m[[0minfo[0m] [0m<p>Target ; reduce by two- thirds, between 1990 and[0m
+[0m[[0minfo[0m] [0m  2015, the under-five mortality rate       [0m
+[0m[[0minfo[0m] [0m  (millennium summit)</p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m<td width="359" valign="top">[0m
+[0m[[0minfo[0m] [0m<p> Fish[0m
+[0m[[0minfo[0m] [0m  protein fights the most deadly disease (kwashiorkor)  </p>[0m
+[0m[[0minfo[0m] [0m<p>Caused by lack or low protein content in children[0m
+[0m[[0minfo[0m] [0m  Known to claim number of children in developing nations including Uganda.[0m
+[0m[[0minfo[0m] [0m  Fish farming in water conservation ponds will solve this problem. </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m</tr>[0m
+[0m[[0minfo[0m] [0m<tr>[0m
+[0m[[0minfo[0m] [0m<td width="349" valign="top">[0m
+[0m[[0minfo[0m] [0m<p><em>Improve  maternal Health </em></p>[0m
+[0m[[0minfo[0m] [0m<p>Target ; Reduce by three-quarters, between 1990[0m
+[0m[[0minfo[0m] [0m  and 2015, the maternal mortality ratio                    ( millennium summit)</p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m<td width="359" valign="top">[0m
+[0m[[0minfo[0m] [0m<p>Improved nutrition (through fish protein) and diet[0m
+[0m[[0minfo[0m] [0m  can reduce the susceptibility of a woman to diseases which appear during[0m
+[0m[[0minfo[0m] [0m  pregnancy. Including women of child –bearing age as "end points" in[0m
+[0m[[0minfo[0m] [0m  health assessments of Nutrition will inform Public health strategies as[0m
+[0m[[0minfo[0m] [0m  geared health of women, their children and the fetus.  </p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m</tr>[0m
+[0m[[0minfo[0m] [0m<tr>[0m
+[0m[[0minfo[0m] [0m<td width="349" valign="top">[0m
+[0m[[0minfo[0m] [0m<p><em> </em></p>[0m
+[0m[[0minfo[0m] [0m<p><em> </em></p>[0m
+[0m[[0minfo[0m] [0m<p><em>Combat HIV/AIDs, malaria  and other</em></p>[0m
+[0m[[0minfo[0m] [0m<p><em>Diseases </em></p>[0m
+[0m[[0minfo[0m] [0m<p>Target ; Have halted by 2015 and begun  to reverse the spread of HIV/AIDS(millennium[0m
+[0m[[0minfo[0m] [0m  summit)</p>[0m
+[0m[[0minfo[0m] [0m<p>Target: Have halted by 2015 and begun to reverse[0m
+[0m[[0minfo[0m] [0m  the incidence of malaria and other Major Diseases</p>[0m
+[0m[[0minfo[0m] [0m<p>(millennium summit)</p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m<td width="359" valign="top">[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p>Food security and improved nutrition helps in[0m
+[0m[[0minfo[0m] [0m  fighting diseases, improved nutrition (through fish protein and improved food[0m
+[0m[[0minfo[0m] [0m  production) can help to boost the immune system of people suffering from[0m
+[0m[[0minfo[0m] [0m  HIV/AIDS.</p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m</tr>[0m
+[0m[[0minfo[0m] [0m<tr>[0m
+[0m[[0minfo[0m] [0m<td width="349" valign="top">[0m
+[0m[[0minfo[0m] [0m<p><em>Ensure [0m
+[0m[[0minfo[0m] [0m  environmental sustainability </em></p>[0m
+[0m[[0minfo[0m] [0m<p>Target : Integrate the principles of[0m
+[0m[[0minfo[0m] [0m  sustainable  development in to the[0m
+[0m[[0minfo[0m] [0m  country polices and reverse the loss of environmental recourses</p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m<td width="359" valign="top">[0m
+[0m[[0minfo[0m] [0m<p>Water conservation projects have been known to[0m
+[0m[[0minfo[0m] [0m  create micro climates. </p>[0m
+[0m[[0minfo[0m] [0m<p>Crops also are known to improve micro climates[0m
+[0m[[0minfo[0m] [0m  through evapo- transpiration. </p>[0m
+[0m[[0minfo[0m] [0m<p>With fish farming, by products will be recycled[0m
+[0m[[0minfo[0m] [0m  into poultry and animal feeds(organic farming), this promotes environmental[0m
+[0m[[0minfo[0m] [0m  sustainability, as compared to the use of inorganic fertilizers </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m</tr>[0m
+[0m[[0minfo[0m] [0m<tr>[0m
+[0m[[0minfo[0m] [0m<td width="349" valign="top">[0m
+[0m[[0minfo[0m] [0m<p><em>Develop a global partnership for[0m
+[0m[[0minfo[0m] [0m  development</em></p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m<td width="359" valign="top">[0m
+[0m[[0minfo[0m] [0m<p>International (FAO) and other organizations[0m
+[0m[[0minfo[0m] [0m  represent a potential international funding to support national capacity[0m
+[0m[[0minfo[0m] [0m  building for food security and improve farming or agriculture in Uganda.</p>[0m
+[0m[[0minfo[0m] [0m<p>Promoting partnership with many  agricultural, environmental  organization and ministries will benefit environmental[0m
+[0m[[0minfo[0m] [0m  conservation in Uganda </p>[0m
+[0m[[0minfo[0m] [0m</td>[0m
+[0m[[0minfo[0m] [0m</tr>[0m
+[0m[[0minfo[0m] [0m</tbody>[0m
+[0m[[0minfo[0m] [0m</table>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p><strong>APPEAL </strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong> </strong></p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p>Dear Friends,</p>[0m
+[0m[[0minfo[0m] [0m<p>I like what Robert Smith, Russell[0m
+[0m[[0minfo[0m] [0mSmith Farms, and Cambs said “Water is only going to become more expensive and[0m
+[0m[[0minfo[0m] [0mless reliable. In my opinion, we should be filling all the holes we dig with[0m
+[0m[[0minfo[0m] [0mwater and not using them as landfill.” My goal is to start a water conservation[0m
+[0m[[0minfo[0m] [0mproject in my District in Uganda while carrying out fish farming and organic[0m
+[0m[[0minfo[0m] [0mfarming.</p>[0m
+[0m[[0minfo[0m] [0m<p>Throughout the history of the world, dams and reservoirs have been[0m
+[0m[[0minfo[0m] [0mused successfully in collecting, storing and managing water needed to sustain[0m
+[0m[[0minfo[0m] [0mcivilization. Even today, water remains essential for the survival of mankind[0m
+[0m[[0minfo[0m] [0mand the future development of the world’s cities, industries and agriculture. Storing[0m
+[0m[[0minfo[0m] [0mwater through reservoirs, dams and ponds is seen as another   way of adapting to climate change and ensuring[0m
+[0m[[0minfo[0m] [0mfood security.</p>[0m
+[0m[[0minfo[0m] [0m<p>I am starting up a project called <strong><em>Nikimu[0m
+[0m[[0minfo[0m] [0mwater conservation project for food production during dry periods and[0m
+[0m[[0minfo[0m] [0madaptation to climate change.</em></strong></p>[0m
+[0m[[0minfo[0m] [0m<p>The[0m
+[0m[[0minfo[0m] [0mproject will specialize in mainly organic farming for food production during[0m
+[0m[[0minfo[0m] [0mdry periods and adaptation to climate change. The Nikimu water conservation[0m
+[0m[[0minfo[0m] [0mproject will be committed to water conservation in order to adapt to climate[0m
+[0m[[0minfo[0m] [0mchange and increase irrigation for food production (organic farming) at the[0m
+[0m[[0minfo[0m] [0msame time carryout fish farming. Other objectives will include:</p>[0m
+[0m[[0minfo[0m] [0m<ul>[0m
+[0m[[0minfo[0m] [0m<li>Improving diet (fish diet) of the[0m
+[0m[[0minfo[0m] [0mlocal community around Kamonkoli Sub County  [0m
+[0m[[0minfo[0m] [0mespecially those who cannot afford to buy meat, milk as a source of[0m
+[0m[[0minfo[0m] [0mproteins.</li>[0m
+[0m[[0minfo[0m] [0m<li>Create jobs for youths and[0m
+[0m[[0minfo[0m] [0mconversationalist. </li>[0m
+[0m[[0minfo[0m] [0m<li>To ensure and adapt against climate[0m
+[0m[[0minfo[0m] [0mchange. </li>[0m
+[0m[[0minfo[0m] [0m<li>To build first demonstrative water[0m
+[0m[[0minfo[0m] [0mconservation and irrigation project in Budaka district (Eastern part of Uganda).[0m
+[0m[[0minfo[0m] [0m</li>[0m
+[0m[[0minfo[0m] [0m<li>To ensure that the people of Budaka[0m
+[0m[[0minfo[0m] [0mdistrict produce agricultural products </li>[0m
+[0m[[0minfo[0m] [0m<li>Establishment and promotion of an[0m
+[0m[[0minfo[0m] [0mintegrated catchment management system to ensure maintenance of ecosystem[0m
+[0m[[0minfo[0m] [0mintegrity and sustainable use of water resources. </li>[0m
+[0m[[0minfo[0m] [0m<li>Conserving the wetlands which are[0m
+[0m[[0minfo[0m] [0mdisappearing at a higher rate.</li>[0m
+[0m[[0minfo[0m] [0m<li>Fight poverty.    </li>[0m
+[0m[[0minfo[0m] [0m</ul>[0m
+[0m[[0minfo[0m] [0m<p>I[0m
+[0m[[0minfo[0m] [0mam excited to meet the challenge of starting a project like this one,[0m
+[0m[[0minfo[0m] [0mespecially since it is for a good cause, but I need your help. </p>[0m
+[0m[[0minfo[0m] [0m<p>I[0m
+[0m[[0minfo[0m] [0mhave agreed to raise <strong><em>30,000 dollars</em></strong>   in sponsors and would greatly appreciate any[0m
+[0m[[0minfo[0m] [0mcontribution possible which will help me achieve these goals.  Currently, there is search a project like[0m
+[0m[[0minfo[0m] [0mwater conservation for food production (especially organic farming) during dry[0m
+[0m[[0minfo[0m] [0mperiods and adaptation to climate change in Budaka District (eastern part of[0m
+[0m[[0minfo[0m] [0mUganda) and this is the very reason why your help and support mean so[0m
+[0m[[0minfo[0m] [0mmuch.  All monies raised benefit the[0m
+[0m[[0minfo[0m] [0mimplementation of the project activities. Please join me in supporting this[0m
+[0m[[0minfo[0m] [0mvery important cause.</p>[0m
+[0m[[0minfo[0m] [0m<p>Thank[0m
+[0m[[0minfo[0m] [0myou for your support!</p>[0m
+[0m[[0minfo[0m] [0m<p>Sincerely,[0m
+[0m[[0minfo[0m] [0m</p>[0m
+[0m[[0minfo[0m] [0m<p>Ronald</p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p><strong>Any amount counts</strong><strong> </strong><strong>toward my goal!</strong></p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p>BANK OF AFRICA UGANDA[0m
+[0m[[0minfo[0m] [0mLTD</p>[0m
+[0m[[0minfo[0m] [0m<p>ACCOUNT NUMBER: <strong>03767400001</strong></p>[0m
+[0m[[0minfo[0m] [0m<p> SWIFT CODE or[0m
+[0m[[0minfo[0m] [0mIBAN is <strong>AFRIUGKA</strong></p>[0m
+[0m[[0minfo[0m] [0m<p>ACCOUNT NAME: <strong>RONALD KALELE</strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong><br /></strong></p>[0m
+[0m[[0minfo[0m] [0m<p>I[0m
+[0m[[0minfo[0m] [0mwould like to wish you a loving, peaceful and joyful 2013. </p>[0m
+[0m[[0minfo[0m] [0m<p>Help[0m
+[0m[[0minfo[0m] [0mspread the message - <strong>tell your[0m
+[0m[[0minfo[0m] [0mfriends!</strong> Help me start this project </p>[0m
+[0m[[0minfo[0m] [0m<p>Thank[0m
+[0m[[0minfo[0m] [0myou for everything that you do. <strong>Kalele[0m
+[0m[[0minfo[0m] [0mRonald</strong>  </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p>I[0m
+[0m[[0minfo[0m] [0mwould like to wish you a loving, peaceful and joyful 2013. </p>[0m
+[0m[[0minfo[0m] [0m<p>Help[0m
+[0m[[0minfo[0m] [0mspread the message - <strong>tell your[0m
+[0m[[0minfo[0m] [0mfriends!</strong> Help me start this project </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p><strong style="font-style:normal;">For more information  </strong>Email:<a href="mailto:Graceronald1984@yahoo.com">graceronald1984@yahoo.com</a>[0m
+[0m[[0minfo[0m] [0mor <a href="mailto:nikimufarm@yahoo.com">nikimufarm@yahoo.com</a></p>[0m
+[0m[[0minfo[0m] [0m<p><strong>  </strong></p>[0m
+[0m[[0minfo[0m] [0m<p><strong>NB. THE PROJECT WILL BE IMPLEMENTED UNDER </strong><strong>“INTEGRATED ENVIRONMENT CONSERVATION AND DISASTER ASSESSMENT FOR AFRICA[0m
+[0m[[0minfo[0m] [0m(IECDAA)</strong></p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p><strong>You are free to check the files and Photos for more information</strong></p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p><strong>Thanks </strong></p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>[0m
+[0m[[0minfo[0m] [0m<p> </p>]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/14abdb892c6913e19b50b107f96df33c" id="14abdb892c6913e19b50b107f96df33c" Name="National Society for Irrigation Development and Management" Website="" City="NEW DELHI" Province="Delhi" State="De" Country="IN" Area="Water Supply and Conservation,Watershed Management,Rural Farming Communities,Agricultural Water Conservation and Management,Rivers and Creeks,Groundwater,Soil Conservation and Management" Updated="about 1 year ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[<h3>Mission</h3>[0m
+[0m[[0minfo[0m] [0m NISOM was formed by a group of retired senior engineers and professionals specialising in the field of water resources, water management, agricultural drainage, soil and water conservation and watershed management with a sole purpose of providing specialized consultancy and awareness amongst the farming community, engineers, technocrats, agricultural scientists, and planners for proper use and disposal of ever increasing scarce water resources.[0m
+[0m[[0minfo[0m] [0m<br /><br />[0m
+[0m[[0minfo[0m] [0mThis source of information is from "www.ngosindia.com/a-z/nsidm.htm"]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/d0c734075ea20aa90264d4fe0cfe516b" id="d0c734075ea20aa90264d4fe0cfe516b" Name="Soil and Water Conservation Society SWCS Florida Chapter" Website="floridachapterswcs.org" City="" Province="" State="FL" Country="US" Area="Water Supply and Conservation,Water Quality and Health,Wetlands,Biodiversity Conservation,Conservation Policy,Natural Resource Conservation,Agricultural Water Conservation and Management,Soil Conservation and Management" Updated="over 6 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[SWCS Purpose:<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m   The Soil and Water Conservation Society (SWCS) is a non-profit, scientific and educational organization of professional conservationist. SWCS serves as an advocate for the conservation professional and for science-based conservation policy. Issues of importance include: Biodiversity, Farmland Protection, Sustainable Agriculture, Water Quality, and Wetlands<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mMission Statement: <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m   To foster the science and the art of soil, water, and related natural  resource management to achieve sustainability. We promote and practice an ethic recognizing the interdependence of people and the environment.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/ab77c6ae47efd7608e913bc741a43a61" id="ab77c6ae47efd7608e913bc741a43a61" Name="Soil and Water Conservation Society SWCS Hoosier Chapter" Website="www.hoosierchapterswcs.org" City="" Province="" State="IN" Country="US" Area="Water Supply and Conservation,Water Quality and Health,Wetlands,Biodiversity Conservation,Conservation Policy,Natural Resource Conservation,Agricultural Water Conservation and Management,Soil Conservation and Management" Updated="over 6 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[SWCS Purpose:<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m   The Soil and Water Conservation Society (SWCS) is a non-profit, scientific and educational organization of professional conservationist. SWCS serves as an advocate for the conservation professional and for science-based conservation policy. Issues of importance include: Biodiversity, Farmland Protection, Sustainable Agriculture, Water Quality, and Wetlands<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mMission Statement: <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m   To foster the science and the art of soil, water, and related natural resource management to achieve sustainability. We promote and practice an ethic recognizing the interdependence of people and the environment.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/8a9fce51bd64dddcb6f5a3548d0fe151" id="8a9fce51bd64dddcb6f5a3548d0fe151" Name="Soil and Water Conservation Society SWCS Illinois Chapter" Website="www.ilswcs.org" City="" Province="" State="IL" Country="US" Area="Water Supply and Conservation,Water Quality and Health,Biodiversity Conservation,Sustainable Agriculture,Conservation Policy,Natural Resource Education,Natural Resource Conservation,Agricultural Water Conservation and Management,Soil Conservation and Management" Updated="over 6 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[The Soil and Water Conservation Society (SWCS) is a non-profit,   scientific and educational organization of professional  conservationist. SWCS serves as an advocate for the conservation  professional and for science-based conservation policy. Issues of  importance include: Biodiversity, Farmland Protection, Sustainable  Agriculture, Water Quality, and Wetlands]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/7954df18139d08ba65f46591ffb06218" id="7954df18139d08ba65f46591ffb06218" Name="Soil and Water Conservation Society SWCS Arizona Chapter" Website="www.azswcs.org" City="Avondale" Province="" State="AZ" Country="US" Area="Water Supply and Conservation,Water Quality and Health,Biodiversity Conservation,Sustainable Agriculture,Natural Resource Conservation,Environmental Education,Environmental Ethics,Agricultural Water Conservation and Management,Soil Conservation and Management" Updated="over 6 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[Mission:<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mAs a multi-disciplinary membership organization, we advocate the protection, enhancement, and wise use of soil, water, and related natural resources.  Through education and example, we promote an ethic that recognizes the interdependence of people and the environment.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mPurpose:<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mThe Soil and Water Conservation Society (SWCS) is a non-profit, scientific and educational organization of professional conservationist. SWCS serves as an advocate for the conservation professional and for science-based conservation policy.  Issues of importance include: Biodiversity, Farmland Protection, Sustainable Agriculture, Water Quality, and Wetlands.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mThe Soil and Water Conservation Society (SWCS) Arizona Chapter is a non-profit organization. SWCS promotes conservation professions from around the world in science based conservation policy of our renewable natural resources.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/ca227624b553ff79ffe28a08637c9519" id="ca227624b553ff79ffe28a08637c9519" Name="Eastern Canada Soil and Water Conservation Centre" Website="www.ccse-swcc.nb.ca" City="DSL Saint-André" Province="New Brunswick" State="" Country="CA" Area="Soil Ecology,Water Supply and Conservation,Sustainable Agriculture,Ecosystem Services,Farm Ecosystem Management,Agricultural Water Conservation and Management,Soil Conservation and Management" Updated="over 6 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[Our Organization <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mThe Eastern Canada Soil and Water Conservation Centre is a non-governmental organization affiliated with Université de Moncton, Campus d`Edmundston. In collaboration with stakeholders, the Centre promotes the sound management of soil and water as natural resources. Established in 1991 as a central unit for all four Atlantic provinces [New Brunswick, Nova Scotia, Prince Edward Island and Newfoundland-Labrador], the Centre acts as a resource centre for agricultural stakeholders in Eastern Canada.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mOur Mission<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mTo promote sustainable natural resource management with Atlantic Canada agricultural stakeholders.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mOur Vision<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mTo envision a future where the development of the agricultural industry is environmentally sound, economically viable and socially responsible.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mOur Fields of Expertise<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0msoil and water conservation;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0menvironmental planning;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mdevelopment, analytical and economic studies of production systems and Best Management Practices [BMP] on the farm;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0msustainable development in agriculture;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0msoil and crop management;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mnutrient management;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mcase studies related to integrated analysis of agroenvironmental practices;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mclimate change and greenhouse gas effects [GHG] in agriculture<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mspecialized training related to the fields of expertise mentioned above;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mdevelopment and delivery of workshops and conferences; and<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0morganization of awareness tours and activities.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/606ccca6bc0a98ce7a6666a56ed015ef" id="606ccca6bc0a98ce7a6666a56ed015ef" Name="Wisconsin Land and Water Conservation Association" Website="www.environmentaldirectory.net/action.lasso?-db=EDnational.fp3&amp;amp;-lay=dataentry&amp;amp;-format=detail.htm&amp;amp;-recid=37322&amp;amp;-find" City="Madison" Province="" State="WI" Country="US" Area="Water Supply and Conservation,Water Quality and Health,Sustainable Agriculture,Energy Efficiency and Conservation,Environmental Education,Conservation Easements,Agricultural Water Conservation and Management" Updated="over 6 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[The Wisconsin Land and Water Conservation Association is a membership organization representing all of the state's 72 county land conservation committees. On behalf of county LCCs, LWCA staff work with organization representatives, elected officials and government agencies to secure financial and program support for local conservation activities. Staff also continuously inform LCCs and LCDs on state and national projects and issues. LWCA sponsors conservation education and recognition programs, supports public and private actions to advance resource conservation, works to increase public and private support for conservation and holds an annual conference and other events.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mKEYWORD DESCRIPTORS:  Agriculture/Farming,  Water Quality,  Energy - Conservation/Efficiency/Education,  Environmental Education - General,  Growth Management]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/59875e1f12e4119332a705933afdc4ad" id="59875e1f12e4119332a705933afdc4ad" Name="International foundation for management of water,environment and land inc" Website="" City="greenbelt" Province="" State="MD" Country="US" Area="Social Development,Community Resources,Rural Development,Access To Education,Women&amp;#039;s Rights,Natural Resource Conservation,Agricultural Water Conservation and Management" Updated="over 6 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[lfwel is a non profit scientific,educational,social welfare and development organization; <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mspecializing in activities related to charity programs and projects of any and all types for the improvement of water,land and envirenment management practices in developing countries. <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mifwel has been incorporated in the state of maryland ,usa as a 501{c}{3}non profit. organization under IRS laws of usa. <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mifwel will address problems in the field of ;agricultural and rural development 2] land and water management issues 3} envirenment and natural resources management 4} community based resource management programms for development ,education and social welfare 5}community gender {women } rights for property sharing]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/83a12fb18d23364f8f9a86337b8e7e00" id="83a12fb18d23364f8f9a86337b8e7e00" Name="Anchorage Soil &amp;amp; Water Conservation District ASWCD" Website="www.aswcd.org" City="Anchorage" Province="" State="AK" Country="US" Area="Biological Control,Natural Resource Conservation,Agricultural Water Conservation and Management,Water and Energy,Soil Conservation and Management" Updated="over 4 years ago" Avatar="http://www.wiser.org/images/icons/org/public_agency_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[<h3>Anchorage Soil &amp; Water Conservation District ASWCD</h3>[0m
+[0m[[0minfo[0m] [0mThe function of Conservation Districts is to take available technical, financial, and educational resources, and focus or coordinate them so that they meet the needs of the local land users for the development and conservation of soil, water, and related resources <br /><br />ASWCD was created by Alaska State Charter in 1997. Our core purpose is to promote smart development through the conservation of Alaska's natural resources; at the heart of our organization is the Alaska Constitutional right to self-governance. <br /><br />Self-governance is the concept of being responsible for yourself, but also your surroundings. Through education and support, ASWCD assists property owners in conserving and caring for their water and soil resources. <br /><br />We are a community based organization that, at the request of the landowner, serves as a non-regulatory agency between the landowner and private and governmental agencies; federal, state, and local.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m  </results>[0m
+[0m[[0minfo[0m] [0m</rsp>[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.963] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.963] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 4096 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.963] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Reading from connection[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.963] [spider-spray.io.io-bridge-dispatcher-5] [akka://spider/user/io-bridge] Read 123 bytes[0m
+[0m[[0minfo[0m] [0m[DEBUG] [04/14/2013 15:38:23.963] [spider-akka.actor.default-dispatcher-3] [akka://spider/user/http-conduit] Dispatching 200 response to GET request to http://www.wiser.org:80/organizations/api_search?phrase=Agricultural+Policy&sig=b86e81ad050d619c02c1a1465a06eb3a&key=5afb532c23893c3a932a38cce6d7b06f[0m
+[0m[[0minfo[0m] [0m[INFO] [04/14/2013 15:38:23.967] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/Master/letterRouter/$a] have body for /organizations/api_search?phrase=Agricultural+Policy&sig=b86e81ad050d619c02c1a1465a06eb3a&key=5afb532c23893c3a932a38cce6d7b06f[0m
+[0m[[0minfo[0m] [0m[INFO] [04/14/2013 15:38:23.967] [spider-akka.actor.default-dispatcher-2] [akka://spider/user/Master/letterRouter/$a] <?xml version="1.0" encoding="UTF-8"?>[0m
+[0m[[0minfo[0m] [0m<rsp stat="ok" version="1.0">[0m
+[0m[[0minfo[0m] [0m  <results>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/83d46c0c3ef94dc2e2737f694037b270" id="83d46c0c3ef94dc2e2737f694037b270" Name="Land and Agriculture Policy Centre LAPC" Website="" City="Johannesburg" Province="" State="" Country="ZA" Area="Poverty Alleviation,Community Participation,Rural Development,Land Use Policy,Agricultural Policy,Natural Resource Conservation" Updated="over 7 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[The Land and Agriculture Policy Centre is a section 21, not-for-profit company which contributes to sustainable rural development by providing innovative participatory policy analysis and research in the areas of land, agriculture, rural development, and natural resource management in the interests of the rural poor.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/b43210a0f570269651918fd5cdaacb6c" id="b43210a0f570269651918fd5cdaacb6c" Name="New Mexico Food and Agriculture Policy Council" Website="www.statefoodpolicy.org" City="Des Moines" Province="" State="IA" Country="US" Area="Hunger and Food Security,Local Food Systems,Malnutrition, Diet, Disease, and Education,Food Supply" Updated="over 6 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[The New Mexico Food and Agriculture Policy Council, initiated through citizen-based, grassroots activism,  is a vehicle to  work with public and private entities towards strengthening all of New Mexican’s access to sufficient, high-quality food; strengthening the economy of New Mexico’s ranches, farms, and value-adding food processors.<br /><br />[imgu:newmarkets.jpg:]]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/1ab424e4656e728884216dccc2805842" id="1ab424e4656e728884216dccc2805842" Name="European Conservation Agriculture Federation ECAF" Website="www.ecaf.org" City="Brussels" Province="" State="" Country="BE" Area="Biodiversity Conservation,Sustainable Agriculture,Journalism and the Press,Agricultural Policy,Natural Resource Conservation,Soil Conservation and Management" Updated="over 6 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[The European Conservation Agriculture Federation ECAF brings together fifteen national associations which promote among Europe's farmers the soil management "best practice" aspects of conservation agriculture.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mECAF a non-profit making association, subjected to the Belgium laws. It was conceived to encourage any issue focused on maintaining the agrarian soil and its biodiversity in the context of sustainable agriculture.  <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mConservation agriculture refers to soil management practices which minimise the disruption of the soil's structure, composition and natural biodiversity thereby also minimising erosion and degradation, and water contamination. <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mECAF Objectives<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m- improve technology transfer to farms;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m- promote agricultural and environmental policies supportive of sustainable soil management;<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m- improve information exchange in the research, policy and practitioner communities; and<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m- research, develop, evaluate and promote soil management systems to improve crop production and protection of the environment.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mECAF Activities<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m- Publication of bulletins, newsletters, technical reports, and books.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m- Organisation of international workshops, seminars, congresses and training<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m   programmes (World Congress page).<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m- Information exchange between its member associations.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/c33a5972703a85fa409346bd1c2e84ca" id="c33a5972703a85fa409346bd1c2e84ca" Name="National Centre for Agricultural Economics and Policy, NCAP" Website="www.icar.org.in/ncap/ncap_index.htm" City="New Delhi" Province="" State="" Country="IN" Area="Appropriate Technology,Sustainable Agriculture,Sustainable Production,Agricultural Policy,Globalization Impacts" Updated="over 7 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[The National Centre for Agricultural Economics and Policy Research (NCAP) has been established during 1991 by the Indian Council of Agricultural Research (ICAR) with a view to strengthening agricultural economics research through integration of economic input in planning, designing, and evaluation of agricultural research programs and enhancing the competence in agricultural policy analysis within the National Agricultural Research System. The Centre undertakes and sponsors research in agricultural economics and policy analysis in technology policy, sustainable agriculture, market and trade, institutional change and growth and modeling.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/1a04958150e6ef7ca315d7f37657a5af" id="1a04958150e6ef7ca315d7f37657a5af" Name="Western Sustainable Agriculture Working Group" Website="www.westernsawg.org" City="Victor" Province="" State="MT" Country="US" Area="Agricultural Policy,Pesticides,Seed Conservation,Sustainability Education,Local Food Systems,Rural Farming Communities,Farm Ecosystem Management,Sustainable Energy Development,Global Food Supply and Sustainability,Soil Conservation and Management" Updated="over 4 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[The Western Sustainable Agriculture Working Group is a growing group of organizations and individuals working to promote sustainable agriculture in the West and with others across the United States and Canada.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mMission:  The Western Sustainable Agriculture Working Group is a non-profit organization bringing together diverse individuals and groups working in sustainable agriculture and food systems to share successful models, realize our collective strengths, build regional capacity and inform the agriculture policy debate.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mThe Western SAWG helps its members:<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m* Understand and act on federal public policies and programs that may help or hinder a transition to more sustainable agriculture and food systems in the West.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m* Come together on an annual basis to provide education regarding sustainable agriculture issues and programs to provide skill development, networking and collaboration opportunities.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m* Promote the increased profitability of farmers and ranchers committed to using sustainable agricultural practices and approaches.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m* Create real choices for food consumers by giving them greater opportunity to buy high quality food products more directly from the farmers and ranchers in their communities and region.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m* Build capacity for further sustainable agriculture and food system research and development.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mWestern SAWG addresses issues that no one of its members can completely and effectively tackle on its own here in the West. Western SAWG serves as a clearinghouse for agricultural policy, program models and analysis. We can provide a range of other networking and support services for our members such as: region-wide issue development, staff services for joint collaborative projects and conference planning, project evaluation and project endorsements for member initiatives. Our area of operation includes organizations and individuals located within the states of Arizona, Colorado, Idaho, Montana, Nevada, New Mexico, Oregon, Utah, Washington and the Canadian provinces of Alberta, British Columbia and Saskatchewan.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/a98abd64094e7daa67fc7162180debf6" id="a98abd64094e7daa67fc7162180debf6" Name="Food and Agriculture Organization of the United Nations FAO" Website="www.fao.org" City="Rome" Province="" State="La" Country="IT" Area="Rural Development,Sustainable Agriculture,Hunger and Food Security,Community Training,Agricultural Policy,Malnutrition, Diet, Disease, and Education,Food Supply" Updated="over 2 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[The Food and Agriculture Organization of the United Nations leads international efforts to defeat hunger. Serving both developed and developing countries, FAO acts as a neutral forum where all nations meet as equals to negotiate agreements and debate policy. FAO is also a source of knowledge and information. We help developing countries and countries in transition modernize and improve agriculture, forestry and fisheries practices and ensure good nutrition for all. Since our founding in 1945, we have focused special attention on developing rural areas, home to 70 percent of the world`s poor and hungry people. <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mFAO activities comprise four main areas:<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mPutting information within reach. FAO serves as a knowledge network. We use the expertise of our staff - agronomists, foresters, fisheries and livestock specialists, nutritionists, social scientists, economists, statisticians and other professionals - to collect, analyse and disseminate data that aid development. A million times a month, someone visits the FAO Internet site to consult a technical document or read about our work with farmers. We also publish hundreds of newsletters, reports and books, distribute several magazines, create numerous CD-ROMS and host dozens of electronic fora.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mSharing policy expertise. FAO lends its years of experience to member countries in devising agricultural policy, supporting planning, drafting effective legislation and creating national strategies to achieve rural development and hunger alleviation goals.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mProviding a meeting place for nations. On any given day, dozens of policy-makers and experts from around the globe convene at headquarters or in our field offices to forge agreements on major food and agriculture issues. As a neutral forum, FAO provides the setting where rich and poor nations can come together to build common understanding.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mBringing knowledge to the field. Our breadth of knowledge is put to the test in thousands of field projects throughout the world. FAO mobilizes and manages millions of dollars provided by industrialized countries, development banks and other sources to make sure the projects achieve their goals. FAO provides the technical know-how and in a few cases is a limited source of funds. In crisis situations, we work side-by-side with the World Food Programme and other humanitarian agencies to protect rural livelihoods and help people rebuild their lives.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mFAO`s Mandate<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mAchieving food security for all is at the heart of FAO`s efforts - to make sure people have regular access to enough high-quality food to lead active, healthy lives.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mFAO`s mandate is to raise levels of nutrition, improve agricultural productivity, better the lives of rural populations and contribute to the growth of the world economy.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mFAO provides the kind of behind-the-scenes assistance that helps people and nations help themselves. If a community wants to increase crop yields but lacks the technical skills, we introduce simple, sustainable tools and techniques. When a country shifts from state to private land ownership, we provide the legal advice to smooth the way. When a drought pushes already vulnerable groups to the point of famine, we mobilize action. And in a complex world of competing needs, we provide a neutral meeting place and the background knowledge needed to reach consensus.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/a661fd8e5eb07f35709623031c49003e" id="a661fd8e5eb07f35709623031c49003e" Name="Food and Agriculture Organisation" Website="" City="New Delhi" Province="" State="0" Country="IN" Area="Social Development,Sustainable Forestry,Rural Development,Sustainable Agriculture,Sustainable Fishing,Agricultural Policy,Malnutrition, Diet, Disease, and Education,Economic Development" Updated="over 4 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[<b>Our Aim/Objective/Mission:</b> [0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mFAO gives practical help to developing countries through a wide range of technical assistance projects; encourages an integrated approach, with environmental, social and economic considerations included in the formulation of development projects; collects, analyses, interprets and disseminates information relating to nutrition, food, agriculture, forestry and fisheries; serves as a clearing-house, providing farmers, scientists, traders and government planners ;provides independent advice on agricultural policy and planning, and the administrative and legal structures needed for development; provides a neutral forum where all nations can meet to discuss and formulate policy on major food and agriculture issues.FAO’s current focus in India is mainly on plant production activities, forestry, fisheries, nutrition, and food quality &amp; safety.[0m
+[0m[[0minfo[0m] [0m<br /><br />[0m
+[0m[[0minfo[0m] [0m<b>Our Purpose:</b> [0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mAgriculture, Food and Nutrition, Forestry, Rural Development.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/4857af38e316000f6ce1a152284ba033" id="4857af38e316000f6ce1a152284ba033" Name="Consultative Group on International Agricultural Research CGIAR" Website="www.cgiar.org" City="Washington" Province="" State="DC" Country="US" Area="Poverty Alleviation,Sustainable Forestry,Sustainable Agriculture,Sustainable Fishing,Hunger and Food Security,Agricultural Policy" Updated="over 3 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[<table border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr><td> </td><td width="583" valign="top"><p><font face="Arial, Helvetica, sans-serif" size="-1" color="#006600"><font color="#003300">The CGIAR Mission</font></font> </p><p><font face="Arial, Helvetica, sans-serif" size="-1" color="#006600"><font color="#000000">To achieve sustainable food security and reduce poverty in developing countries through scientific research and research-related activities in the fields of agriculture, forestry, fisheries, policy, and environment.</font></font><font face="Arial, Helvetica, sans-serif" size="2"> <br /><br /><font color="#003300">Introduction</font></font> </p><p>The Consultative Group on International Agricultural Research (CGIAR), established in 1971, is a strategic partnership of countries, international and regional organizations and private foundations supporting the work of 15 international Centers. In collaboration with national agricultural research systems, civil society and the private sector, the CGIAR fosters sustainable agricultural growth through high-quality science aimed at benefiting the poor through stronger food security, better human nutrition and health, higher incomes and improved management of natural resources. <font face="Arial, Helvetica, sans-serif" size="-1" color="#006600"> <br /><br /><font color="#003300">Agriculture, the key to development</font></font><font color="#003300"><font face="Arial, Helvetica, sans-serif" size="-1"></font></font></p><p><font face="Arial, Helvetica, sans-serif" size="-1">In a world where 75 percent of poor people depend on agriculture to survive, poverty cannot be reduced without investment in agriculture. Many of the countries with the strongest agricultural sectors have a record of sustained investment in agricultural science and technology. The evidence is clear, research for development generates agricultural growth and reduces poverty.</font></p><p><font face="Arial, Helvetica, sans-serif" size="-1" color="#006600"><font color="#003300">Agricultural research benefits people and the planet</font></font></p><p><font face="Arial, Helvetica, sans-serif" size="-1">Agricultural research for development has a record of delivering results. The science that made possible the Green Revolution of the 1960s and 1970s was largely the work of CGIAR Centers and their national agricultural research partners. The scientists' work not only increased incomes for small farmers, it enabled the preservation of millions of hectares of forest and grasslands, conserving biodiversity and reducing carbon releases into the atmosphere. CGIAR's research agenda is dynamic, flexible, and responsive to emerging development challenges. The research portfolio has evolved from the original focus on increasing productivity in individual critical food crops. Today's approach recognizes that biodiversity and environment research are also key components in the drive to enhance sustainable agricultural productivity. Our belief in the fundamentals remains as strong as ever: agricultural growth and increased farm productivity in developing countries creates wealth, reduces poverty and hunger and protects the environment.<br /><br /><font color="#003300"><br />The CGIAR has five areas of focus</font>   </font></p><ul><li>Sustainable production (of crops, livestock, fisheries, forests and natural resources) </li><li>Enhancing National Agricultural Research Systems NARS (through joint research, policy support, training and knowledge-sharing) </li><li>Germplasm Improvement (for priority crops, livestock, trees and fish) </li><li>Germplasm Collection (collecting, characterizing and conserving genetic resources - the CGIAR holds in public trust one of the world’s largest seed collections available to all) </li><li>Policy (fostering research on policies that have a major impact on agriculture, food, health, spread of new technologies and the management and conservation of natural resources) </li></ul></td></tr></tbody></table>]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/93f123e453b83c06b901c0751eeed6d5" id="93f123e453b83c06b901c0751eeed6d5" Name="National Campaign for Sustainable Agriculture" Website="www.sustainableagriculture.net" City="Pine Bush" Province="" State="NY" Country="US" Area="Rural Development,Sustainable Agriculture,Biotechnology,Agricultural Policy,Food Supply" Updated="over 4 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[About Us <br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mConvening Grassroots Organizations<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mThe National Campaign for Sustainable Agriculture is an alliance of hundreds of grassroots, state, regional and national organizations, representing constituencies that include family farms, rural and urban communities, environmental and wildlife advocates, workers, students, indigenous peoples, consumers and faith-based institutions.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mMission Statement<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mThe National Campaign for Sustainable Agriculture is a network of diverse groups whose mission is to shape national policies to foster a sustainable food and agricultural system -- one that is economically viable, environmentally sound, socially just, and humane.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mThe Goals of the National Campaign are to:<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Foster understanding, communication, and leadership development.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Engage in policy analysis and development.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Work together to advance common policy objectives.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0mSpecific objectives are to:<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Foster interaction among food system stakeholders.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Work to secure the economic viability of family sized farms.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Enhance grassroots capacity to participate in policy development.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Expand grassroots and national participation in National Campaign activities.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Establish mechanisms for communication, information sharing, and dialogue at national, regional and state levels.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Educate policy makers, other decision-makers, and the general public about sustainable agriculture.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Conduct policy analyses and develop common policy options and positions.<br />[0m
+[0m[[0minfo[0m] [0m<br />[0m
+[0m[[0minfo[0m] [0m    * Design and implement strategies to influence federal policy, and other policies of national scope.]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m    <organization href="http://www.wiser.org/organization/view/bf70c1145da9bc9391bdff702eee4ed9" id="bf70c1145da9bc9391bdff702eee4ed9" Name="International Food &amp;amp; Agricultural Trade Policy Council" Website="www.agritrade.org" City="Washington" Province="" State="DC" Country="US" Area="Sustainable Agriculture,Hunger and Food Security,Agricultural Policy,Sustainable Livelihoods,Economic Development,Food Supply,Agricultural Water Conservation and Management,Livestock in Developing Nations,Food Aid,Global Food Supply and Sustainability" Updated="over 5 years ago" Avatar="http://www.wiser.org/images/icons/org/non_profit_lg.png">[0m
+[0m[[0minfo[0m] [0m      <About><![CDATA[<p>The International Food &amp; Agricultural Trade Policy Council (IPC) promotes a more open and equitable global food system by pursuing pragmatic trade and development policies in food and agriculture to meet the world's growing needs. IPC convenes influential policymakers, agribusiness executives, farm leaders, and academics from developed and developing countries to clarify complex issues, build consensus, and advocate policies to decision-makers.</p><p>IPC concentrates on the following policy initiatives:</p><ul><li><a href="http://www.agritrade.org/policy/trade_negotiations.html"><u><font color="#0000ff">Agricultural Trade Negotiations</font></u></a> </li><li><a href="http://www.agritrade.org/policy/rural_development.html"><u><font color="#0000ff">Agricultural and Rural Development Policies</font></u></a> </li><li><a href="http://www.agritrade.org/policy/food_technology.html"><u><font color="#0000ff">Food Technology and Standards</font></u></a> </li></ul><p>IPC is a 501(c)(3) non-profit organization.</p>]]></About>[0m
+[0m[[0minfo[0m] [0m    </organization>[0m
+[0m[[0minfo[0m] [0m  </results>[0m
+[0m[[0minfo[0m] [0m</rsp>[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[INFO] [04/14/2013 15:38:23.967] [spider-akka.actor.default-dispatcher-7] [akka://spider/user/Master] all results in[0m
+[0m[[0minfo[0m] [0mall results in, calling System.exit[0m
