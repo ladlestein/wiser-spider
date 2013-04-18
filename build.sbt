@@ -19,5 +19,7 @@ libraryDependencies ++= Seq(
 )
 
 resolvers ++= Seq(
-    "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+        "spray repo" at "http://repo.spray.io",
+        "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
+        "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 )

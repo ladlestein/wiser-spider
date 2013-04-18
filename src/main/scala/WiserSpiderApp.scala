@@ -51,7 +51,7 @@ object WiserSpiderApp extends App {
   val SECRET = "ec8efd4d64c84ab64c099642808393b8"
   val digester = MessageDigest.getInstance("MD5")
 
-  val issuesFilePath = "resources/issues.csv"
+  val issuesFilePath = "resources/wiser-orgs.csv"
   val reader = CSVReader.open(new File(issuesFilePath))
   val rows = reader.all()
 
@@ -123,7 +123,7 @@ object WiserSpiderApp extends App {
       database ("wiserorgs")
     }
 
-    val UrlTemplate = s"/organizations/api_search?phrase=%s&sig=%s&key=$API_KEY"
+    val UrlTemplate = s"/organizations/api_search?phrase=%s&sig=%s&key=$API_KEY&limit=1000"
 
     def receive = {
       case QueryIssue(issueName) => {
