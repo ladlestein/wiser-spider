@@ -10,7 +10,10 @@ fork in run := true
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.1.2",
+  "com.typesafe.akka" %% "akka-slf4j" % "2.1.2",
+  "com.typesafe.akka" %% "akka-testkit" % "2.1.2" % "test",
   "org.ccil.cowan.tagsoup" % "tagsoup" % "1.2.1" withSources(),
+  "ch.qos.logback" % "logback-classic" % "1.0.7",
   "org.mongodb" %% "casbah" % "2.5.0",
   "com.novus" %% "salat" % "1.9.2-SNAPSHOT",
   "com.github.tototoshi" %% "scala-csv" % "0.7.0",
