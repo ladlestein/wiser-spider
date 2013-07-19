@@ -1,13 +1,21 @@
-import com.nowanswers.wiserspider.WiserSpiderApp.{QueryIssue, WiserPageVisitorComponent}
+package com.nowanswers.wiserspider
+
 import org.specs2.mutable._
 import org.specs2.specification.Scope
-import org.specs2.mock._
-import concurrent._
-import spray.http.{HttpBody, HttpResponse}
-import akka.pattern._
+import org.specs2.mock.Mockito
 import akka.util.Timeout
+import akka.actor.{Status, Actor, ActorRef, ActorSystem}
+import akka.pattern._
+import concurrent._
+import concurrent.duration._
+import spray.http.{HttpResponse, HttpBody}
+import akka.testkit.{ImplicitSender, TestKit, TestActor}
+import akka.actor.Status.Failure
 
 
+class Foo {
+  def length(x: String): Int  = {x.length}
+}
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,25 +24,44 @@ import akka.util.Timeout
  * Time: 5:05 PM
  * To change this template use File | Settings | File Templates.
  */
+
+
 class WiserPageVisitorSpec
-  extends Specification with WiserPageVisitorComponent with Mockito {
+  extends Specification with WiserPageVisitorComponent with Mockito with org.specs2.time.NoTimeConversions {
+
+  isolated
 
   import ExecutionContext.Implicits.global
 
-  implicit val timeout = Timeout(60 * 60 * 2) // I want to use Timeout(2 hours) but it's not compiling!
+  implicit val timeout = Timeout(2 hours)
 
   val theWeb = mock[WebInterface]
   val processor = mock[ResultsProcessor]
 
-  "The wiser page visitor" should {
-    "pass results along" in new Scope {
+  val url = "http://something"
+  val body = "stuff"
+  val issueName = "things"
 
-      val url = "http://something"
-      val body = "stuff"
-      val issueName = "things"
-      theWeb.fetchUrl(url, null, false) returns future { HttpResponse(entity = HttpBody(body)) }
-      visitor ? QueryIssue(url, issueName)
-      there was one(processor.processResults(body, issueName))
+  "The wiser page visitor" should {
+    "passes a result along" in new Scope {
+
+      theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(entity = HttpBody(body)) }
+      val result = actor ? QueryIssue(url, issueName)
+      Await.result(result, 2 seconds)
+      there was one(processor).processResults(body, issueName)
+    }
+
+    "reports a failure" in new TestKit(system) with ImplicitSender with Scope {
+
+      theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(status = 500, entity = HttpBody(body)) }
+      actor ! QueryIssue(url, issueName)
+      expectMsg(Status.Failure)
     }
   }
+
+  val system = ActorSystem("wiser-spider-test")   // TODO I think this can be made implicit.
+  val mlog = system.log
+  val nActors: Integer = 1
+
 }
+
