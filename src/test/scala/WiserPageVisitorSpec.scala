@@ -51,6 +51,11 @@ class WiserPageVisitorSpec
       there was one(processor).processResults(body, issueName)
     }
 
+    "reports a success" in new TestKit(system) with ImplicitSender with Scope {
+      theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(entity = HttpBody(body)) }
+      actor ! QueryIssue(url, issueName)
+      expectMsg(Status.Success)
+    }
     "reports a failure" in new TestKit(system) with ImplicitSender with Scope {
 
       theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(status = 500, entity = HttpBody(body)) }
