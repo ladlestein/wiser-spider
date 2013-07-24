@@ -1,29 +1,11 @@
 package com.nowanswers.wiserspider
 
 import akka.actor._
-import akka.pattern._
 import com.github.tototoshi.csv.CSVReader
-import java.io.{PrintWriter, File}
-import java.net.URLEncoder
+import java.io.File
 import scala.concurrent.duration._
-import spray.http.{HttpRequest, HttpMethods}
-import spray.can.client.HttpClient
-import spray.client.HttpConduit
-import spray.io.IOExtension
-import akka.routing.RoundRobinRouter
-import scala.concurrent._
-import java.security.MessageDigest
-import org.apache.commons.codec.binary.Hex
-import scala.concurrent.duration.Duration
-import org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl
 import akka.util.Timeout
 import com.novus.salat.annotations.raw.Key
-import com.mongodb.casbah.Imports._
-import scala.util.Sorting
-import akka.event.{LoggingAdapter, Logging}
-import akka.actor.Status.Failure
-import spray.http.HttpResponse
-import akka.actor.Status.Success
 
 /**
  * Created with IntelliJ IDEA.

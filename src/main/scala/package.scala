@@ -14,7 +14,7 @@ package object wiserspider {
   val N_API_CALLERS = 1
   val TARGET_HOSTNAME = "www.wiser.org"
 
-  val system = ActorSystem("spider")
+  implicit val system = ActorSystem("spider")
   val mlog = system.log
 
   val dispatcher = system.dispatcher

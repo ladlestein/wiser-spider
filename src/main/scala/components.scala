@@ -2,22 +2,18 @@ package com.nowanswers.wiserspider
 
 import akka.actor._
 import scala.concurrent.{ExecutionContext, Future}
-import spray.http.{HttpMethods, HttpRequest}
 import org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl
 import akka.actor.Status.{Success, Failure}
 import com.mongodb.casbah.Imports._
-import spray.http.HttpResponse
-import spray.can.client.HttpClient
-import spray.client.HttpConduit
-import spray.io.IOExtension
+import spray.http._
+import spray.client.pipelining._
 import akka.event.LoggingAdapter
 import scala.concurrent.duration._
-import akka.routing.RoundRobinRouter
 import ExecutionContext.Implicits.global
 
 
 trait RunContext {
-  def system: ActorSystem
+  implicit def system: ActorSystem
   def mlog: LoggingAdapter
 }
 
@@ -34,15 +30,8 @@ trait RealWebInterfaceComponent extends WebInterfaceComponent {
 
   self: RunContext =>
 
-  val ioBridge = IOExtension(system).ioBridge()
-  val httpClient = system.actorOf(Props(new HttpClient(ioBridge)))
 
-
-  val conduit = system.actorOf(
-    props = Props(new HttpConduit(httpClient, TARGET_HOSTNAME, 80)),
-    name = "http-conduit"
-  )
-  val pipeline = HttpConduit.sendReceive(conduit)
+  lazy val pipeline = sendReceive
 
   lazy val theWeb = new WebInterface {
     def fetchUrl(url: String, originalSender: ActorRef, haveRetried: Boolean): Future[HttpResponse] = {
@@ -51,7 +40,7 @@ trait RealWebInterfaceComponent extends WebInterfaceComponent {
         mlog debug s"response.status.value = ${response.status.value}"
         mlog debug s"response.message = ${response.message}"
         response.status.value match {
-          case 500 if response.message.toString contains "Per hour call limit reached" => throw CallLimitException(url)
+          case "500" if response.message.toString contains "Per hour call limit reached" => throw CallLimitException(url)
           case _ => response
         }
       } recoverWith {
@@ -117,7 +106,9 @@ trait WiserResultsProcessorComponent extends ResultsProcessorComponent with Orga
 }
 
 trait WiserPageVisitorComponent
-  extends ActorComponent with WebInterfaceComponent with ResultsProcessorComponent with RunContext {
+  extends ActorComponent with WebInterfaceComponent with ResultsProcessorComponent {
+
+  self: RunContext =>
 
   lazy val actor: ActorRef = system.actorOf(Props(classOf[PageVisitor], this), "api-callers")
 

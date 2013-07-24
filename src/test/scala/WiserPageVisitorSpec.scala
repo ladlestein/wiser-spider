@@ -8,14 +8,9 @@ import akka.actor.{Status, Actor, ActorRef, ActorSystem}
 import akka.pattern._
 import concurrent._
 import concurrent.duration._
-import spray.http.{HttpResponse, HttpBody}
+import spray.http.{HttpEntity, HttpResponse, HttpBody}
 import akka.testkit.{ImplicitSender, TestKit, TestActor}
-import akka.actor.Status.Failure
 
-
-class Foo {
-  def length(x: String): Int  = {x.length}
-}
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,8 +21,13 @@ class Foo {
  */
 
 
+trait TestContext extends RunContext {
+  val system = ActorSystem("wiser-spider-test")   // TODO I think this can be made implicit.
+  val mlog = system.log
+}
+
 class WiserPageVisitorSpec
-  extends Specification with WiserPageVisitorComponent with Mockito with org.specs2.time.NoTimeConversions {
+  extends Specification with WiserPageVisitorComponent with Mockito with org.specs2.time.NoTimeConversions with TestContext {
 
   isolated
 
@@ -45,27 +45,25 @@ class WiserPageVisitorSpec
   "The wiser page visitor" should {
     "passes a result along" in new Scope {
 
-      theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(entity = HttpBody(body)) }
+      theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(entity = HttpEntity(body)) }
       val result = actor ? QueryIssue(url, issueName)
       Await.result(result, 2 seconds)
       there was one(processor).processResults(body, issueName)
     }
 
     "reports a success" in new TestKit(system) with ImplicitSender with Scope {
-      theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(entity = HttpBody(body)) }
+      theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(entity = HttpEntity(body)) }
       actor ! QueryIssue(url, issueName)
       expectMsg(Status.Success)
     }
     "reports a failure" in new TestKit(system) with ImplicitSender with Scope {
 
-      theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(status = 500, entity = HttpBody(body)) }
+      theWeb.fetchUrl(be_===(url), any[ActorRef] , any[Boolean]) returns future { HttpResponse(status = 500, entity = HttpEntity(body)) }
       actor ! QueryIssue(url, issueName)
       expectMsg(Status.Failure)
     }
   }
 
-  val system = ActorSystem("wiser-spider-test")   // TODO I think this can be made implicit.
-  val mlog = system.log
   val nActors: Integer = 1
 
 }
