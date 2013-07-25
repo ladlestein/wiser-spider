@@ -22,7 +22,7 @@ import akka.testkit.{ImplicitSender, TestKit, TestActor}
 
 
 trait TestContext extends RunContext {
-  val system = ActorSystem("wiser-spider-test")   // TODO I think this can be made implicit.
+  implicit val system = ActorSystem("wiser-spider-test")   // TODO I think this can be made implicit.
   val mlog = system.log
 }
 

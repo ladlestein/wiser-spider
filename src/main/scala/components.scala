@@ -30,8 +30,10 @@ trait RealWebInterfaceComponent extends WebInterfaceComponent {
 
   self: RunContext =>
 
+  def pipeline: HttpRequest => Future[HttpResponse]
+  def waitPeriod: FiniteDuration
 
-  lazy val pipeline = sendReceive
+  //= sendReceive
 
   lazy val theWeb = new WebInterface {
     def fetchUrl(url: String, originalSender: ActorRef, haveRetried: Boolean): Future[HttpResponse] = {
@@ -39,16 +41,16 @@ trait RealWebInterfaceComponent extends WebInterfaceComponent {
       pipeline(HttpRequest(method = HttpMethods.GET, uri = url)) map { response =>
         mlog debug s"response.status.value = ${response.status.value}"
         mlog debug s"response.message = ${response.message}"
-        response.status.value match {
-          case "500" if response.message.toString contains "Per hour call limit reached" => throw CallLimitException(url)
+        response.status.intValue match {
+          case 500 if response.message.toString contains "Per hour call limit reached" => throw CallLimitException(url)
           case _ => response
         }
       } recoverWith {
         case _: CallLimitException => {
           // Just one try, after waiting one hour.
           mlog warning s"call limit reached for $url; waiting one hour"
-          if (haveRetried) {
-            Thread.sleep((1 hour).toMillis)
+          if (!haveRetried) {
+            Thread.sleep(waitPeriod.toMillis)
             fetchUrl(url, originalSender, haveRetried = true)
           } else {
             mlog error s"retry after one hour failed for $url; this request will go unfilled"
